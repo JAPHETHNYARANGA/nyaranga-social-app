@@ -20,7 +20,6 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         ButterKnife.bind(this);
-//        GridView gridView = findViewById(R.id.gridy);
         gridView.setAdapter(new Adaptery(this));
         gridView.setNumColumns(2);
 

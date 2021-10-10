@@ -10,18 +10,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
-    TextView registerText;
-    Button newActivity;
-    private EditText username;
+
+
+    @BindView(R.id.tvRegister) TextView registerText;
+    @BindView(R.id.button1) Button newActivity;
+    @BindView(R.id.etUserName) EditText username;
+//    private EditText username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
-        registerText = (TextView)findViewById(R.id.tvRegister);
-        newActivity = (Button)findViewById(R.id.button1);
-        username = (EditText)findViewById(R.id.etUserName);
 
 
         String showName = username.getText().toString();
