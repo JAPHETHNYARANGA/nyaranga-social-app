@@ -9,17 +9,19 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Register extends AppCompatActivity {
-    TextView logintText;
-    Button loginButton;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
+public class Register extends AppCompatActivity {
+
+    @BindView(R.id.textView2) TextView logintText;
+    @BindView(R.id.btnRegister) Button loginButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        logintText=(TextView)findViewById(R.id.textView2);
 
-        loginButton = (Button)findViewById(R.id.btnRegister);
+        ButterKnife.bind(this);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
