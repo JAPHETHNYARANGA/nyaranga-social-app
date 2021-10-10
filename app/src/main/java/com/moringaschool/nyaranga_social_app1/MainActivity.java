@@ -13,5 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        registerText = (TextView)findViewById(R.id.tvRegister);
+        newActivity = (Button)findViewById(R.id.button1);
+
     }
 }
