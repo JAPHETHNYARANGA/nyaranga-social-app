@@ -1,0 +1,2 @@
+rootProject.name = "nyaranga-social-app1"
+include ':app'
