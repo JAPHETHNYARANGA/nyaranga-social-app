@@ -3,10 +3,10 @@
 
 ##ScreenShots
 
-![App image](app/src/Assets/README/scr1.png)
-![App image](app/src/Assets/README/scr2.png)
-![App image](app/src/Assets/README/scr3.png)
-![App image](app/src/Assets/README/scr4.png)
+![App image](app/src/Assets/README/screenshot1.jpeg)
+![App image](app/src/Assets/README/screenshot2.jpeg)
+![App image](app/src/Assets/README/screenshot3.jpeg)
+
 
 ## Setup And Intallation
 For users, just download the app on your Android device and you are good to go.a
