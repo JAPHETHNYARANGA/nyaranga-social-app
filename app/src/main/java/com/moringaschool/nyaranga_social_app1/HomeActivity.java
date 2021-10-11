@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.GridView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import butterknife.BindView;
@@ -15,6 +16,7 @@ import butterknife.ButterKnife;
 
 public class HomeActivity extends AppCompatActivity {
     @BindView(R.id.gridy) GridView gridView;
+    @BindView(R.id.textView3) TextView viewText;
 
 
     @Override
@@ -25,6 +27,10 @@ public class HomeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         gridView.setAdapter(new Adaptery(this));
         gridView.setNumColumns(2);
+
+        Intent intent = getIntent();
+        String NAME_EXTRA = intent.getStringExtra("NAME_EXTRA");
+        viewText.setText(NAME_EXTRA);
 
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

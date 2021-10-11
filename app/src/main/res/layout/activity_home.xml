@@ -20,9 +20,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:textColor="#C4DC18"
+        android:textStyle="bold"
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="71dp"
+        android:layout_height="25dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
