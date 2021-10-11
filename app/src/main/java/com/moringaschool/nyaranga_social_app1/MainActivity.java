@@ -45,11 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 String showName = username.getText().toString();
 
                 if(showName.isEmpty()){
-                    Toast.makeText(MainActivity.this,"input username to continue",Toast.LENGTH_LONG);
+                    Toast.makeText(MainActivity.this,"input username to continue",Toast.LENGTH_LONG).show();
                 }else{
                     Toast.makeText(MainActivity.this, "welcome "+ showName, Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    intent.putExtra("EXTRA_NAME", showName);
                     startActivity(intent);
+
                 }
 
 
