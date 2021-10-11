@@ -40,12 +40,12 @@ public class Adaptery extends BaseAdapter {
     }
 
     public Integer[] mThumbsIds ={
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1
+            R.drawable.cooking,
+            R.drawable.racing,
+            R.drawable.social,
+            R.drawable.sports,
+            R.drawable.social,
+            R.drawable.party
+,
     };
 }
