@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tvRegister) TextView registerText;
     @BindView(R.id.button1) Button newActivity;
     @BindView(R.id.etUserName) EditText username;
-//    private EditText username;
+    @BindView(R.id.etPassword) EditText password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        String showName = username.getText().toString();
+
 
         registerText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,9 +42,17 @@ public class MainActivity extends AppCompatActivity {
         newActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "welcome "+ showName, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-                startActivity(intent);
+                String showName = username.getText().toString();
+
+                if(showName.isEmpty()){
+                    Toast.makeText(MainActivity.this,"input username to continue",Toast.LENGTH_LONG);
+                }else{
+                    Toast.makeText(MainActivity.this, "welcome "+ showName, Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                }
+
+
             }
         });
 
