@@ -45,7 +45,12 @@ public class Adaptery extends BaseAdapter {
             R.drawable.social,
             R.drawable.sports,
             R.drawable.social,
-            R.drawable.party
+            R.drawable.party,
+            R.drawable.footer,
+            R.drawable.pic1,
+            R.drawable.pic2,
+            R.drawable.pic3,
+            R.drawable.footer
 ,
     };
 }
