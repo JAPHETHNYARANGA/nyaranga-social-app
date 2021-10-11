@@ -2,9 +2,11 @@ package com.moringaschool.nyaranga_social_app1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.Toast;
 
@@ -13,6 +15,7 @@ import butterknife.ButterKnife;
 
 public class HomeActivity extends AppCompatActivity {
     @BindView(R.id.gridy) GridView gridView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
